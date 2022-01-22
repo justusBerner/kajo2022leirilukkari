@@ -560,3 +560,28 @@ a {
     opacity: 0.8;
   }
 }
+
+.kieli {
+  list-style: none;
+display: inline;
+float: left; 
+size: 12px 12px 12px ;
+padding: 5px;
+text-align: center;
+}
+
+.kielik {
+  font-size: 45px;
+  text-decoration: none;
+}
+
+#lp {
+  background-color: #1E2869 ;
+}
+
+#party {
+  background-color: #AA50C8 ;
+}
+#sh {
+  background-color: #96E6E6 ;
+}
