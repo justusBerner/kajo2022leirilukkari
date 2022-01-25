@@ -1,5 +1,4 @@
 (function() {
-	// Schedule Template - by CodyHouse.co
 	function ScheduleTemplate( element ) {
 		this.element = element;
 		this.timelineItems = this.element.getElementsByClassName('cd-schedule__timeline')[0].getElementsByTagName('li');
@@ -369,3 +368,14 @@
 		};
 	}
 }());
+
+
+const input = document.querySelector('.teemanvaihtaja input');
+
+input.addEventListener('change', (e)=> {
+	if(e.target.checked) {
+		document.body.setAttribute('data-theme', 'dark');
+		}else {
+			document.body.setAttribute('data-theme', 'light');
+		}
+})
