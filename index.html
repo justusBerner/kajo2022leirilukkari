@@ -17,15 +17,133 @@
   gtag('config', 'G-C7K153EG05');
 </script>
 </head>
-<body data-theme="light">
+<style>
+
+  .nav {
+    position: relative;
+      bottom: 0;
+      width: 100%;
+      height: 55px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      overflow-x: auto;
+    }
+    .nav__link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      min-width: 50px;
+      overflow: hiden;
+      white-space: nowrap;
+      font-family: barlow;
+      font-size: 13px;
+      font-weight: 600;
+      color: F8Ea48;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.1s ease-in-out;
+  
+    }
+
+    
+	/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	align-items: center;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600px;
+  background-color: #1e2869;
+  color: #fff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 14px 14px;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #f8EA48;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  
+    .alamenu {
+      background-color: #fff;
+    }
+  </style>
+  
+  <body data-theme="light">
+    <div class="alamenu">
+    <nav class="nav">
+      <a target="_blank" href="https://kajo2022.fi" class="nav__link" >
+        <i class="fa-solid fa-house"></i>
+        <span class="nav__text">👈 Takaisin Kajo2022.fi sivulle</span>
+      </a>
+  
+        <a target="_blank" href="https://data.kajo2022.fi/alaleirihaku/" class="nav__link">
+        <i class="fa-solid fa-calendar-day"></i>
+      <span class="nav__text">Alaleirihaku</span>
+      </a>
+  
+        <a href="#up" class="nav__link" >
+
+  
+        <a id="myBtn" class="nav__link" >
+         
+            <!-- Trigger/Open The Modal -->
+      </a>
+  
+    </nav>
+  </div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Vaihda kieli / change language / ändra språk</p>
+    <br>
+    <a class="poplinkki" href="https://data.kajo2022.fi/alaleirihaku/en">In English</a>
+    <br>
+    <br>
+    <a class="poplinkki" href="https://data.kajo2022.fi/alaleirihaku/sv">på svenska</a>
+  </div>
+
+</div>
   
   <header class="cd-main-header text-center flex flex-column flex-center">
     <div class="menuk">
       
+      <br>
     </div>
-    <div class="backs">
-      <p class="margin-top-md margin-bottom-xl">👈 <a class="cd-article-link" href="https://kajo2022.fi" target="_blank">Takaisin Kajo2022.fi sivulle</a></p>
-    </div>
+    <div class="backs">    </div>
     <h1 class="text-xl">Leirilukkari I Kajo 2022</h1>
     <p>Klikkaamalla eri blokkeja, näet enemmän.</p>
     <br>
@@ -231,7 +349,7 @@
               </li>
 
               <li class="cd-schedule__event">
-                <a data-start="19:00" id="lp" data-end="20:00"  data-content="shows" data-event="event-4" href="#0">
+                <a data-start="19:00" id="lp" data-end="20:00"  data-content="shows" data-event="event-2" href="#0">
                   <em style="font-size: 17px;" class="cd-schedule__name">Antaa kajahtaa -yhteislauluilta 🎵</em>
                 </a>
               </li>
@@ -312,8 +430,8 @@
             </li>
   
             <li class="cd-schedule__event">
-              <a data-start="11:00" data-end="12:00"  data-content="lounas" data-event="event-3" href="#0">
-                <em class="cd-schedule__name">Antaa kajahtaa</em>
+              <a data-start="11:00" data-end="12:00"  data-content="lounas" data-event="event-4" href="#0">
+                <em style="font-size: 15px;" class="cd-schedule__name">Antaa kajahtaa</em>
               </a>
             </li>
 
@@ -325,7 +443,7 @@
             </li>
 
             <li class="cd-schedule__event">
-              <a data-start="13:30" data-end="14:00"  data-content="lounas" data-event="event-3" href="#0">
+              <a data-start="13:30" data-end="14:00" style="font-size: 15px; color: black;"  data-content="lounas" data-event="event-4" href="#0">
                 <em class="cd-schedule__name">Antaa kajahtaa</em>
               </a>
             </li>
@@ -495,7 +613,7 @@
               </li>
 
               <li class="cd-schedule__event">
-                <a data-start="19:30" data-end="21:00"  data-content="shows" data-event="event-4" href="#0">
+                <a data-start="19:30"  style="background-color: rgb(255, 182, 24);" data-end="21:00"  data-content="shows" data-event="event-4" href="#0">
                   <em class="cd-schedule__name">Siityminen päättäjäisiin</em>
                 </a>
               </li>
@@ -509,7 +627,7 @@
 
               <li class="cd-schedule__event">
                 <a data-start="22:00" data-end="24:00"  data-content="shows" data-event="event-4" href="#0">
-                  <em class="cd-schedule__name">Päättäjäisbileet kaikille ikäkausille✨</em>
+                  <em style="font-size: 15px;" class="cd-schedule__name">Päättäjäisbileet kaikille ikäkausille✨</em>
                 </a>
               </li>
           </ul>
