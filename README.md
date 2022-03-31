@@ -1,3 +1,4 @@
 
 Tehtiin nopealla aikataululla tälläinen HTML, CSS versio leirilukkkarista. 
-Tarkoituksena olisi rakentaa jonkulainen portaali tähän, vaikka angularilla tai php käyttäen.
+
+Tulen lähiaikoina yhdistämään palvelun data.kajo2022.fi sivuston alle. Siellä on tällä hetkellä jo alaleirihaku-"sovellus". Kajo Admin-työkalu tulee toimimaan näiden kaikkien työkalujen hallinnointisovelluksena.
