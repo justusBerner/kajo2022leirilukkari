@@ -42,8 +42,14 @@
 }
 
 .infobanner:hover {
-    background-color: #AA50C8
+    background-color: black;
+    transition: 0.3s;
+
 }
+
+.ilmoitusa:hover {
+    color: yellow;
+    transition: 0.3s;}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
