@@ -8,6 +8,14 @@
 */
 
 
+#lukkarileiri {
+    font-size: 19px;
+}
+
+#kiitos {
+    color: #1e286e;
+}
+
 .ilmoitusb {
     background-color: #f54251;
     width: 134px;
